@@ -25,7 +25,7 @@ public class IdentificationNumberApiController {
         // TODO: Bardzo prosze unikac implementacji logiki w kontrolerze!
 
 
-        return new ResponseEntity<>(CheckingPesel.itcorectPesel(id) ? HttpStatus.OK : HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(CheckingPesel.itscorectPesel(id) ? HttpStatus.OK : HttpStatus.BAD_REQUEST);
     }
 
 }
